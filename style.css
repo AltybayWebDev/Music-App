@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+}
+
+#progress .times,
+.card-footer,
+.volume-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.volume-container i {
+  margin-right: 5px;
+}
+
+img {
+  height: 50% !important;
+}
+
+li.playing {
+  background-color: #0b5eb7;
+  color: #fff;
+}
+
+#progress-bar::-webkit-slider-runnable-track {
+  background: linear-gradient(
+    to right,
+    #0d6efd var(--progress, 0%),
+    #dee2e6 var(--progress, 0%)
+  );
+}
+
+#progress-bar::-moz-range-track {
+  background: linear-gradient(
+    to right,
+    #0d6efd var(--progress, 0%),
+    #dee2e6 var(--progress, 0%)
+  );
+}
+
+#volume-bar::-webkit-slider-runnable-track {
+  background: linear-gradient(
+    to right,
+    #0d6efd var(--volume, 0%),
+    #dee2e6 var(--volume, 0%)
+  );
+}
+
+#volume-bar::-moz-range-track {
+  background: linear-gradient(
+    to right,
+    #0d6efd var(--volume, 0%),
+    #dee2e6 var(--volume, 0%)
+  );
+}
