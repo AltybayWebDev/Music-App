@@ -127,6 +127,7 @@ volume.addEventListener("click", () => {
     volumeBar.value = 0;
     muteState = "muted";
   }
+  updateVolumeFill();
 });
 
 volumeBar.addEventListener("input", () => {
